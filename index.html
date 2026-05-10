@@ -952,21 +952,75 @@
                 justify-content: center;
             }
         }
+
+
+
+        /* --- NOVA LOGO E HEADER CORRIGIDOS --- */
+#header {
+    background-color: #f1f3f5; /* Cor de fundo cinza clara do header */
+    padding: 15px 0; /* Padding vertical do header */
+    border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre a imagem e o texto */
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Tamanho da Imagem da Logo */
+.logo-img {
+    height: 70px; /* Aumente ou diminua aqui para definir a altura da logo */
+    width: auto; /* Mantém a proporção */
+    object-fit: contain;
+}
+
+/* Wrapper para os textos ficarem um embaixo do outro */
+.logo-txt-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-txt-wrapper h1 {
+    font-size: 26px; /* Tamanho maior do nome Kleanma */
+    font-weight: 700;
+    color: #1a1e22; /* Preto acinzentado */
+    margin: 0;
+    line-height: 1.1;
+}
+
+.logo-txt-wrapper span {
+    font-size: 11px; /* Tamanho menor do REFRIGERAÇÃO */
+    color: #1c7ed6; /* Azul claro do REFRIGERAÇÃO */
+    text-transform: uppercase;
+    letter-spacing: 3.5px; /* Espaçamento entre letras idêntico à imagem */
+    margin-top: -2px; /* Ajuste fino de alinhamento */
+}
     </style>
 </head>
 <body>
 
     <!-- ===== HEADER ===== -->
-    <header id="header">
+   <header id="header">
     <div class="header-inner">
         <a href="#" class="logo">
-            <div class="logo-icon">
-                <img src="logo1.JPG" alt="Logo Kleanma" style="width: 100%; height: 100%; object-fit: contain;">
-            </div>
+            <img src="logo.png" alt="Logo Kleanma" class="logo-img">
             
-            <div class="logo-text">
+            <div class="logo-txt-wrapper">
                 <h1>Kleanma</h1>
-                <span>Refrigeração</span>
+                <span>REFRIGERAÇÃO</span>
             </div>
         </a>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
